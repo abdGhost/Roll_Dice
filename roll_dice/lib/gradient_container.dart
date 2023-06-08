@@ -19,9 +19,17 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: Center(
-        child: Image.asset(
-          'assets/dice_images/dice-1.png',
-          width: 200,
+        child: Column(
+          children: [
+            Image.asset(
+              'assets/dice_images/dice-1.png',
+              width: 200,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text('Click'),
+            ),
+          ],
         ),
       ),
     );
